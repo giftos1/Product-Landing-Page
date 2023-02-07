@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+   /* background-color: aqua; */
+   display: flex;
+   justify-content: space-between;
+}
+
+#nav_bar {
+    padding-top: 45px;
+}
+
+.nav_links a{
+    padding-right: 200px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links li {
+    list-style-type: none;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.heading-content, form {
+    display: grid;
+    place-items: center;
+}
+
+form input {
+    display: block
+}
+
+.title, form input {
+    margin-bottom: 20px;
+}
+
+#email-input {
+    padding: 5px;
+}
+
+#submit-input {
+    padding: 5px 15px;
+    font-size: 18px;
+}
