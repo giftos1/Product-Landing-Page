@@ -42,19 +42,77 @@ header {
     place-items: center;
 }
 
-form input {
-    display: block
-}
+/* form {
+    display: block;
+} */
 
 .title, form input {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #email-input {
     padding: 5px;
+    margin-bottom: -5px;
 }
 
 #submit-input {
-    padding: 5px 15px;
+    padding: 5px 2px;
     font-size: 18px;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.content {
+    margin-bottom: 50px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.item {
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+.item-title, .item-price, .item-description {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.item-title {
+    background-color: antiquewhite;
+}
+
+button {
+    font-size: 1.4rem;
+    padding: 5px;
+    background-color: rgb(219, 219, 190);
+    cursor: pointer;
 }
