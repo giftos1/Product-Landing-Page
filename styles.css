@@ -2,11 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header img {
     height: 100px;
-    width: 100px;
 }
 
 body {
@@ -42,9 +42,6 @@ header {
     place-items: center;
 }
 
-/* form {
-    display: block;
-} */
 
 .title, form input {
     margin-bottom: 10px;
@@ -60,12 +57,12 @@ header {
     font-size: 18px;
 }
 
-.container{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+#features{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 95%;
+    width: 60%;
+    margin: 50px auto;
 }
 
 .content {
@@ -77,26 +74,24 @@ header {
 i {
     font-size: 50px;
     margin-bottom: 20px;
+    display: grid;
+    place-items: center;
 }
 
-.items {
+#pricing {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 18px;
-    gap: 20px;
     flex-wrap: wrap;
-    font-size: 20px;
+    gap: 20px;
+    justify-content: center;
 }
 
 .item {
     border: 1px solid black;
-    display: grid;
-    place-items: center;
-    width: 50%;
     padding-bottom: 20px;
     border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 350px;
 }
 
 
@@ -107,12 +102,42 @@ i {
 }
 
 .item-title {
-    background-color: antiquewhite;
+    background-color: rgb(143, 142, 142);
+    text-transform: uppercase;
 }
 
 button {
     font-size: 1.4rem;
     padding: 5px;
-    background-color: rgb(219, 219, 190);
+    background-color: rgb(175, 175, 173);
     cursor: pointer;
+}
+
+footer {
+    margin-top: 40px;
+}
+.footer-container {
+    height: 60px;
+    font-size: 19px;
+    padding-top: 10px;
+    background-color: lightgray;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-links, #copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-links li{
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.footer-links li a {
+    text-decoration: none;
 }
