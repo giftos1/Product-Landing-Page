@@ -3,38 +3,39 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
-header img {
-    height: 100px;
+#header {
+    height: 70px;
+    position: sticky;
+    background-color: aliceblue;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+}
+
+#header-img {
+    height: 60px;
+    
 }
 
 body {
-    height: 100vh;
+    background-color: aliceblue;
 }
 
-header {
-   /* background-color: aqua; */
-   display: flex;
-   justify-content: space-between;
-}
-
-#nav_bar {
-    padding-top: 45px;
-}
-
-.nav_links a{
-    padding-right: 200px;
+.nav-link {
+    padding-right: 50px;
     text-decoration: none;
     font-size: 20px;
+    color: rgb(8, 2, 19);
 }
 
-.nav_links li {
+#nav-bar li {
     list-style-type: none;
-}
-
-.logo {
-    padding-left: 10px;
 }
 
 .heading-content, form {
@@ -47,12 +48,16 @@ header {
     margin-bottom: 10px;
 }
 
-#email-input {
+.title {
+    text-align: center;
+}
+
+#email {
     padding: 5px;
     margin-bottom: -5px;
 }
 
-#submit-input {
+#submit {
     padding: 5px 2px;
     font-size: 18px;
 }
@@ -71,11 +76,23 @@ header {
     padding: 0 20px;
 }
 
-i {
+.fa-solid {
     font-size: 50px;
     margin-bottom: 20px;
     display: grid;
     place-items: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    height: 400px;
+}
+
+#video {
+    height: 100%;
+    min-width: 50%;
 }
 
 #pricing {
@@ -102,7 +119,7 @@ i {
 }
 
 .item-title {
-    background-color: rgb(143, 142, 142);
+    background-color: rgb(179, 178, 178);
     text-transform: uppercase;
 }
 
@@ -114,30 +131,48 @@ button {
 }
 
 footer {
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 2px;
 }
+
 .footer-container {
     height: 60px;
     font-size: 19px;
     padding-top: 10px;
-    background-color: lightgray;
+    background-color: rgb(150, 201, 247);
     padding-right: 40px;
     padding-bottom: 30px;
     width: 80%;
     margin: auto;
 }
 
-.footer-links, #copyright {
+#footer-links, #copyright {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.footer-links li{
+#footer-links li{
     list-style-type: none;
     padding-right: 20px;
 }
 
-.footer-links li a {
+.footer-link {
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
+
+.nav-link:hover, .footer-link:hover {
+    color: rgb(81, 64, 235);
+}
+
+@media screen and (max-width: 465px) {
+    .footer-container {
+      width: 100%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 8px;
+    }
+  }
